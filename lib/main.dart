@@ -281,13 +281,13 @@ class _LandingPageState extends State<LandingPage> {
                                   child: Text(
                                     '''Xin chào! 
 
-I'm Ivy! I'm originally from Vietnam, but I've lived overseas my whole life.
+I'm Ivy! I'm originally from Vietnam, but I was born in Malaysia and grew up in Switzerland and Singapore.
 
 I’m an aspiring designer fueled by iced matcha lattes and a strong belief that good design can change the world (or at least make it a little smarter). 
 
 I’m currently studying Design and Artificial Intelligence at the Singapore University of Technology and Design, with minors in Design, Technology and Society and Computer Science.
 
-Always curious and chasing new things to learn, I have explored designing an autonomous car from scratch, developed an AI that help people design more intuitively, and geeked out over the latest technologies. 
+Always curious and chasing new things to learn, I have explored designing an autonomous car from scratch, developed an AI that helps people design more intuitively, and geeked out over the latest technologies. 
 
 When I’m not sketching ideas or drowning in assignments, you can catch me sprinting across a football pitch, diving for a volleyball (gracefully), or hunting down photo spots with my friends.''',
                                     style: TextStyle(fontSize: 16, height: 1.5),
