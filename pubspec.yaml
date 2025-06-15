@@ -1,0 +1,118 @@
+name: term_summary
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  animated_text_kit: ^4.2.2
+  font_awesome_flutter: ^10.7.0
+  url_launcher: ^6.1.7
+  visibility_detector: ^0.4.0
+  flutter_svg: ^2.0.7
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/profile.jpg
+    - assets/images/camera.png
+    - assets/images/raia.png
+    - assets/images/home.png
+    - assets/images/full_logo.png
+    - assets/images/logo.png
+    - assets/images/project1.png
+    - assets/images/project2.png
+    - assets/images/project3.png
+    - assets/images/project4.png
+    - assets/images/project5.png
+    - assets/images/project6.png
+    - assets/images/project7.png
+    - assets/images/project8.png
+    - assets/images/project9.png
+    - assets/images/project10.png
+    - assets/images/project11.png
+    - assets/images/aboutmeheader.png
+    - assets/images/projectsheader.png
+    - assets/images/experienceheader.png
+    - assets/images/raiaheader.png
+    - assets/images/raiaposter.png
+    - assets/images/raiaapp.png
+    - assets/images/aigen1.png
+    - assets/images/aigen2.png
+    - assets/images/aigen3.png
+    - assets/images/aigen4.png
+    - assets/images/aigen5.png
+    - assets/images/aigen6.png
+    - assets/images/logo.svg
+    - assets/images/fcsutd1.png
+    - assets/images/fcsutd2.png
+    - assets/images/fcsutd3.png
+    - assets/images/fcsutd4.png
+    - assets/images/fcsutd5.png
+    - assets/images/fcsutd6.png
+    - assets/images/fcsutd7.png
+    - assets/images/fcsutd8.png
+    - assets/images/fcsutd9.png
+    - assets/images/fcsutd10.png
+    - assets/images/etfc1.jpg
+    - assets/images/etfc2.jpg
+    - assets/images/etfc3.jpg
+    - assets/images/etfc4.jpg
+    - assets/images/etfc5.jpg
+    - assets/images/etfc6.jpg
+    - assets/images/etfc7.jpg
+    - assets/images/etfc8.jpg
+    - assets/images/etfc9.jpg
+    - assets/images/etfc10.jpg
+    - assets/images/etfc11.jpg
+    - assets/images/etfc12.jpg
+    - assets/images/etfc13.jpg
+    - assets/images/etfc14.jpg
+    - assets/images/eyevpham.png
+    - assets/images/raiarender1.png
+    - assets/images/raiarender2.png
+    - assets/images/raiarender3.png
+    - assets/images/oriental1.png
+    - assets/images/oriental2.png
+    - assets/images/orientalposter.png
+    - assets/images/taichi1.png
+    - assets/images/taichi2.png
+    - assets/images/taichi3.png
+    - assets/images/taichi4.png
+    - assets/images/taichi5.png
+    - assets/images/research1.jpg
+    - assets/images/research2.jpg
+    - assets/images/research3.jpg
+    - assets/images/research4.png
+    - assets/images/research5.png
+    - assets/images/research6.png
+    - assets/images/ex1.png
+    - assets/images/ex2.png
+    - assets/images/ex3.png
+    - assets/images/ex4.png
+    - assets/images/ex5.png
+    - assets/images/ex6.png
+    - assets/images/ex7.png
+    - assets/images/ex8.png
+    - assets/images/ex9.png
+    - assets/images/resume.png
+
+
+
+  fonts:
+    - family: glacial-indifference
+      fonts:
+      - asset: assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf
+      - asset: assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf
+        weight: 700
