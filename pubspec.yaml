@@ -42,6 +42,8 @@ flutter:
     - assets/images/project9.png
     - assets/images/project10.png
     - assets/images/project11.png
+    - assets/images/project13.png
+    - assets/images/project14.png
     - assets/images/aboutmeheader.png
     - assets/images/projectsheader.png
     - assets/images/experienceheader.png
@@ -106,6 +108,21 @@ flutter:
     - assets/images/ex7.png
     - assets/images/ex8.png
     - assets/images/ex9.png
+    - assets/images/fameline1.png
+    - assets/images/fameline2.png
+    - assets/images/midwhere1.png
+    - assets/images/midwhere2.png
+    - assets/images/midwhere3.png
+    - assets/images/midwhere4.png
+    - assets/images/midwhere5.png
+    - assets/images/midwhere6.png
+    - assets/images/midwhere7.png
+    - assets/images/midwhere8.png
+    - assets/images/midwhere9.png
+    - assets/images/midwhere10.png
+    - assets/images/midwhere11.png
+    - assets/images/midwhere12.png
+    - assets/images/midwhere13.png
     - assets/images/resume.png
 
 

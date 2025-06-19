@@ -16,7 +16,7 @@ class Project11Page extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFFF9F9F9),
       appBar: AppBar(
-        title: const Text('Research Illustration: Ballistic Electrons'),
+        title: const Text('Research Paper Illustrations'),
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
         elevation: 0,
@@ -31,12 +31,12 @@ class Project11Page extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  'Research Illustration: Ballistic Electrons in Graphene',
+                  'Research Paper Illustrations',
                   style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 4),
                 const Text(
-                  'Creative Communication of Ballistic Electrons in Graphene',
+                  'Communicating complex ideas in a creative and accessible manner',
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w300),
                 ),
                 const SizedBox(height: 32),
@@ -63,7 +63,7 @@ class Project11Page extends StatelessWidget {
                         children: [
                           Text('Strategies:', style: TextStyle(fontWeight: FontWeight.bold)),
                           SizedBox(height: 4),
-                          Text('Research Illustration, Science Communication, Graphic Design'),
+                          Text('Research Illustration, Science Communication, Illustration'),
                         ],
                       ),
                     ),
@@ -93,12 +93,14 @@ class Project11Page extends StatelessWidget {
                 ),
                 const SizedBox(height: 40),
                 const Text(
-                  'To make cutting-edge physics research accessible to the public, this illustration project visualizes the findings of a 2025 Nature paper on nonlinear optical resonances using ballistic electrons in graphene.',
+                  '''This project features a collaboration with SUTD professors and researchers in illustrating various complex scientific concepts in an easily digestable format. 
+
+*Note this project is ongoing.''',
                   style: TextStyle(fontSize: 16, height: 1.6),
                 ),
                 const SizedBox(height: 32),
                 const Text(
-                  'Summary of Research:',
+                  'Ballistic Electrons in Graphene:',
                   style: TextStyle(fontSize: 20),
                 ),
                 const SizedBox(height: 12),
@@ -145,15 +147,6 @@ class Project11Page extends StatelessWidget {
                   fileExtension: 'jpg',
                   startImageIndex: 1,
                 ),
-                const SizedBox(height: 24), 
-                // Second image gallery: research4.png to research6.png
-                const HorizontalImageScroller(
-                  imageCount: 3,
-                  imagePrefix: 'research',
-                  fileExtension: 'png',
-                  startImageIndex: 4,
-                ),
-                const SizedBox(height: 40),
                 // New subheading
                 const Text(
                   'Future Directions:',
@@ -164,7 +157,16 @@ class Project11Page extends StatelessWidget {
                   'This project is ongoing and future drawings are in the making...',
                   style: TextStyle(fontSize: 16, height: 1.6),
                 ),
+                const SizedBox(height: 24),
+                // Second image gallery: research4.png to research6.png
+                const HorizontalImageScroller(
+                  imageCount: 3,
+                  imagePrefix: 'research',
+                  fileExtension: 'png',
+                  startImageIndex: 4,
+                ),
                 const SizedBox(height: 40),
+                
               ],
             ),
           ),

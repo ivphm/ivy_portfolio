@@ -166,7 +166,7 @@ class Project1Page extends StatelessWidget {
                     const SizedBox(width: 24),
                     const Expanded(
                       child: Text(
-                        'This project was developed over 12 weeks as part of the 60.003 Product Design Studio course at SUTD, under the mentorship of Michael Reeves, Wei Lek, and Hunn Wai. Starting from a basic chassis frame, we designed the EV from the ground up—defining its purpose, concept, visual language, and functionality, culminating in a physical prototype and complete speculative ecosystem.\n\nKey design highlights include:\n– A form inspired by manta rays and modular robotics, blending fluid geometry with functional modularity\n– A floorless bay system and 2-part locking mechanism for rapid PIP deployment\n– LiDAR, cameras, and ultrasonic sensors with AI computer vision\n– SolidState battery for rapid and automated charging',
+                        'This project was developed over 12 weeks as part of the 60.003 Product Design Studio course at SUTD, under the mentorship of Michael Reeves, Wei Lek, and Hunn Wai. Starting from a basic chassis frame, we designed the EV from the ground up—defining its purpose, concept, visual language, and functionality, culminating in a physical prototype and complete speculative ecosystem.\n\nKey features\n• A form inspired by manta rays and modular robotics, blending fluid geometry with functional modularity\n• A floorless bay system and 2-part locking mechanism for rapid PIP deployment\n• LiDAR, cameras, and ultrasonic sensors with AI computer vision\n• SolidState battery for rapid and automated charging',
                         style: TextStyle(fontSize: 16, height: 1.5),
                       ),
                     ),

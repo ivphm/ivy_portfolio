@@ -16,6 +16,8 @@ import 'project_pages/project9_page.dart';
 import 'project_pages/project10_page.dart';
 import 'project_pages/project11_page.dart';
 import 'project_pages/project12_page.dart';
+import 'project_pages/project13_page.dart';
+import 'project_pages/project14_page.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 // ignore: avoid_web_libraries_in_flutter
 import 'dart:html' as html;
@@ -74,21 +76,35 @@ class _LandingPageState extends State<LandingPage> {
       categories: ['Product', 'Graphic', 'Software'],
     ),
     Project(
-      title: 'Generative AI Engineered Bus Seat',
+      title: 'LUVA: AI-Powered Louver Specification Tool',
+      subtitle: 'Intelligent Platform to Streamline Louvers Supply in Construction',
+      thumbnailPath: 'assets/images/project13.png',
+      detailPage: const Project13Page(),
+      categories: ['Graphic', 'Software'],
+    ),
+    Project(
+      title: 'MidWhereAh',
+      subtitle: 'AI-assisted mobile app to plan fair, accessible, and satisfying meetups',
+      thumbnailPath: 'assets/images/project14.png',
+      detailPage: Project14Page(),
+      categories: ['Graphic', 'Software'],
+    ),
+    Project(
+      title: 'Generative AI Bus Seat',
       subtitle: 'Optimizing Bus Seat Design for Comfort, Cost, and Sustainability',
       thumbnailPath: 'assets/images/project2.png',
       detailPage: Project2Page(),
       categories: ['Software'],
     ),
     Project(
-      title: 'AI Data Analytics for Design Opportunities',
+      title: 'AI Data Analytics',
       subtitle: 'UX Analysis for Gaming Chair Design',
       thumbnailPath: 'assets/images/project3.png',
       detailPage: Project3Page(),
       categories: ['Software'],
     ),
     Project(
-      title: 'YouTwitFace Algorithmic System Design',
+      title: 'YouTwitFace',
       subtitle: 'Data Structures and Points System Design',
       thumbnailPath: 'assets/images/project4.png',
       detailPage: Project4Page(),
@@ -109,8 +125,8 @@ class _LandingPageState extends State<LandingPage> {
       categories: ['Graphic'],
     ),
     Project(
-      title: 'Oriental Enlightenment: Smart Lighting System',
-      subtitle: 'subtitle',
+      title: 'Oriental Enlightenment',
+      subtitle: 'Design, IoT, and Context-Aware Smart Systems',
       thumbnailPath: 'assets/images/project7.png',
       detailPage: Project7Page(),
       categories: ['Product', 'Graphic'],
@@ -137,8 +153,8 @@ class _LandingPageState extends State<LandingPage> {
       categories: ['Illustration'],
     ),
     Project(
-      title: 'Research Illustration: Ballistic Electrons',
-      subtitle: '''Creative Communication of Ballistic Electrons in Graphene''',
+      title: 'Research Paper Illustrations',
+      subtitle: '''Creative Communication of Scientific Research Papers''',
       thumbnailPath: 'assets/images/project11.png',
       detailPage: Project11Page(),
       categories: ['Illustration'],
@@ -332,7 +348,7 @@ When I’m not sketching ideas or drowning in assignments, you can catch me spri
                           ElevatedButton.icon(
                             onPressed: () {
                               html.window.open(
-                                'https://drive.google.com/file/d/1YLuMOi6czodjl71BTS0rpPQvdWs5BHb5/preview',
+                                'https://drive.google.com/file/d/1dMp7rRtoqYBw8PHRH5TOFKnMKjSgpfAm/preview',
                                 '_blank',
                               );
                             },
