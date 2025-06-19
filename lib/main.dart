@@ -368,7 +368,7 @@ When I’m not sketching ideas or drowning in assignments, you can catch me spri
                       const SizedBox(height: 24),
                       Center(
                         child: Image.asset(
-                          'assets/images/resume.png',
+                          'assets/images/resume(new).png',
                           width: 800,
                           fit: BoxFit.contain,
                         ),
