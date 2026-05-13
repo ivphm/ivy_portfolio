@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@source "../components/**/*.tsx";
+@source "../app/**/*.tsx";
+@source "../data/**/*.ts";
 
 @font-face {
   font-family: 'GlacialIndifference';
@@ -16,28 +19,32 @@
   font-display: swap;
 }
 
-:root {
-  --background: #ffffff;
-  --foreground: #000000;
-  --accent: #144A91;
-}
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+  :root {
+    --background: #ffffff;
+    --foreground: #000000;
+    --accent: #144A91;
+  }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-  background: var(--background);
-  color: var(--foreground);
-  font-family: 'GlacialIndifference', sans-serif;
-}
+  html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'GlacialIndifference', sans-serif;
+  }
 
-a {
-  color: inherit;
-  text-decoration: none;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
 }

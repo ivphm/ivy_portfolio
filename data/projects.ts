@@ -157,7 +157,7 @@ export const projects: Project[] = [
     slug: 'ai-bus-seat',
     title: 'Generative AI Bus Seat',
     subtitle: 'Optimizing Bus Seat Design for Comfort, Cost, and Sustainability',
-    thumbnail: '/images/project10.png',
+    thumbnail: '/images/project_10.png',
     categories: ['Software', 'Product'],
     meta: [
       { label: 'Company', value: 'SUTD: 60.002 AI Applications in Design' },
@@ -170,7 +170,7 @@ export const projects: Project[] = [
     slug: 'research-illustrations',
     title: 'Research Paper Illustrations',
     subtitle: 'Creative Communication of Scientific Research Papers',
-    thumbnail: '/images/project11.png',
+    thumbnail: '/images/project11cover.png',
     categories: ['Illustration'],
     meta: [
       { label: 'Company', value: 'Singapore University of Technology and Design (SUTD)' },

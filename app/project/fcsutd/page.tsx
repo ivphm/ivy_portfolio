@@ -8,7 +8,7 @@ const images = Array.from({ length: 10 }, (_, i) => `/images/fcsutd${i + 1}.png`
 export default function FcsutdPage() {
   return (
     <ProjectPageLayout title={p.title} subtitle={p.subtitle} meta={p.meta}>
-      <p className="text-base leading-relaxed">
+      <p style={{ fontSize: '16px', lineHeight: 1.6 }}>
         This project focused on establishing a clear and modern visual identity for the SUTD Football Club. The scope involved designing the club logo, digital and physical collateral (including jerseys and posters), and ensuring consistency across all platforms. The design combines bold visual elements with strong type to convey both team unity and energy.
       </p>
 

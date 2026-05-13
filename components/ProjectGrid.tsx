@@ -16,15 +16,22 @@ export default function ProjectGrid() {
   return (
     <div>
       {/* Filter chips */}
-      <div className="flex flex-wrap justify-center gap-3 py-6">
+      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '12px', padding: '24px 0' }}>
         {FILTERS.map((f) => (
           <button
             key={f}
             onClick={() => setActive(f)}
-            className="px-6 py-2 rounded-full text-base font-medium transition-colors duration-150"
             style={{
-              background: active === f ? '#144A91' : '#d1d5db',
+              padding: '8px 24px',
+              borderRadius: '20px',
+              border: 'none',
+              cursor: 'pointer',
+              fontSize: '16px',
+              fontWeight: 500,
+              fontFamily: 'inherit',
+              backgroundColor: active === f ? '#144A91' : '#d1d5db',
               color: active === f ? '#fff' : '#000',
+              transition: 'background-color 150ms ease',
             }}
           >
             {f}
@@ -32,8 +39,15 @@ export default function ProjectGrid() {
         ))}
       </div>
 
-      {/* Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-6">
+      {/* 2-column grid */}
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(2, 1fr)',
+          gap: '32px',
+          marginTop: '24px',
+        }}
+      >
         {filtered.map((project) => (
           <ProjectCard key={project.slug} project={project} />
         ))}

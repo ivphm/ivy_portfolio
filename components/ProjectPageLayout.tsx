@@ -11,16 +11,22 @@ interface ProjectPageLayoutProps {
 
 export default function ProjectPageLayout({ title, subtitle, meta, children }: ProjectPageLayoutProps) {
   return (
-    <div className="min-h-screen bg-[#F9F9F9]">
-      <Navbar />
-      <main className="pt-20 pb-16">
-        <div className="max-w-4xl mx-auto px-6">
-          <h1 className="text-3xl font-bold">{title}</h1>
-          <p className="mt-1 text-lg font-light">{subtitle}</p>
-          <div className="mt-8">
+    <div style={{ minHeight: '100vh', backgroundColor: '#fff' }}>
+      <Navbar centerLogo={true} />
+      <main style={{ paddingTop: '80px', paddingBottom: '64px' }}>
+        <div
+          style={{
+            maxWidth: '900px',
+            margin: '0 auto',
+            padding: '24px 24px 0',
+          }}
+        >
+          <h1 style={{ fontSize: '28px', fontWeight: 700, lineHeight: 1.3 }}>{title}</h1>
+          <p style={{ marginTop: '4px', fontSize: '18px', fontWeight: 300 }}>{subtitle}</p>
+          <div style={{ marginTop: '32px' }}>
             <MetaGrid items={meta} />
           </div>
-          <div className="mt-10 flex flex-col gap-10">
+          <div style={{ marginTop: '40px', display: 'flex', flexDirection: 'column', gap: '40px' }}>
             {children}
           </div>
         </div>

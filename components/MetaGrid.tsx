@@ -7,11 +7,17 @@ interface MetaGridProps {
 export default function MetaGrid({ items }: MetaGridProps) {
   if (!items.length) return null;
   return (
-    <div className="flex flex-wrap gap-8">
+    <div
+      style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
+        gap: '24px 32px',
+      }}
+    >
       {items.map((item) => (
-        <div key={item.label} className="w-48">
-          <p className="font-bold">{item.label}:</p>
-          <p className="mt-1 text-sm leading-relaxed">{item.value}</p>
+        <div key={item.label}>
+          <p style={{ fontWeight: 700, marginBottom: '4px' }}>{item.label}:</p>
+          <p style={{ fontSize: '14px', lineHeight: '1.5' }}>{item.value}</p>
         </div>
       ))}
     </div>

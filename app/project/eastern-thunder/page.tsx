@@ -8,7 +8,7 @@ const images = Array.from({ length: 14 }, (_, i) => `/images/etfc${i + 1}.jpg`);
 export default function EasternThunderPage() {
   return (
     <ProjectPageLayout title={p.title} subtitle={p.subtitle} meta={p.meta}>
-      <p className="text-base leading-relaxed">
+      <p style={{ fontSize: '16px', lineHeight: 1.6 }}>
         This design project centered around developing visually cohesive and engaging Instagram post templates for Eastern Thunder FC. The content included player highlights, match day countdowns, score updates, and recruitment campaigns. The goal was to maintain brand consistency, increase fan engagement, and visually amplify the club&apos;s identity across digital platforms.
       </p>
 

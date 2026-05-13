@@ -23,40 +23,63 @@ export default function LandingPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div style={{ minHeight: '100vh', backgroundColor: '#fff' }}>
       <Navbar onScrollTo={scrollTo} />
 
-      {/* Hero */}
-      <section className="flex items-center justify-center" style={{ height: '100vh' }}>
+      {/* Hero — full viewport height, logo centred */}
+      <section
+        style={{
+          height: '100vh',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
         <Image
           src="/images/full_logo.png"
           alt="Ivy Pham"
           width={800}
           height={300}
-          className="object-contain w-full max-w-2xl px-8"
+          style={{ objectFit: 'contain', width: '100%', maxWidth: '800px', padding: '0 32px' }}
           priority
         />
       </section>
 
       {/* About */}
-      <section ref={aboutRef} className="px-12 py-16 scroll-mt-16" id="about">
+      <section
+        ref={aboutRef}
+        id="about"
+        style={{ padding: '48px', scrollMarginTop: '64px' }}
+      >
         <ImageHeader src="/images/aboutmeheader.png" alt="About Me" />
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.2 }}
-          className="mt-8 flex flex-col md:flex-row gap-12 items-start"
+          style={{
+            marginTop: '20px',
+            display: 'flex',
+            flexDirection: 'row',
+            gap: '50px',
+            alignItems: 'flex-start',
+          }}
         >
           <Image
             src="/images/camera.png"
             alt="Ivy"
             width={600}
             height={500}
-            className="rounded-2xl object-cover w-full md:w-[520px] flex-shrink-0"
-            style={{ maxHeight: '500px' }}
+            style={{
+              borderRadius: '20px',
+              objectFit: 'cover',
+              width: '600px',
+              height: '500px',
+              flexShrink: 0,
+              marginLeft: '32px',
+            }}
           />
-          <p className="text-base leading-relaxed whitespace-pre-line">{`Xin chào!
+          <p style={{ fontSize: '16px', lineHeight: '1.5' }}>{`Xin chào!
 
 I'm Ivy! I'm originally from Vietnam, but I was born in Malaysia and grew up in Switzerland and Singapore.
 
@@ -71,34 +94,54 @@ When I'm not sketching ideas or drowning in assignments, you can catch me sprint
       </section>
 
       {/* Projects */}
-      <section ref={projectsRef} className="px-12 py-16 scroll-mt-16" id="projects">
+      <section
+        ref={projectsRef}
+        id="projects"
+        style={{ padding: '48px', scrollMarginTop: '64px' }}
+      >
         <ImageHeader src="/images/projectsheader.png" alt="Projects" />
-        <div className="mt-6">
+        <div style={{ marginTop: '20px' }}>
           <ProjectGrid />
         </div>
       </section>
 
       {/* Experience */}
-      <section ref={experienceRef} className="px-12 py-16 scroll-mt-16" id="experience">
+      <section
+        ref={experienceRef}
+        id="experience"
+        style={{ padding: '48px', scrollMarginTop: '64px' }}
+      >
         <ImageHeader src="/images/experienceheader.png" alt="Experience" />
-        <div className="mt-8 flex items-center justify-center gap-4">
-          <span className="text-xl font-medium">Resume:</span>
+        <div style={{ marginTop: '24px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '16px' }}>
+          <span style={{ fontSize: '20px' }}>Resume:</span>
           <a
             href="https://drive.google.com/file/d/1KRUVdhTaI7uOW8bqGl8aOEwNfoHvWiti/preview"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-5 py-3 bg-[#144A91] text-white rounded-xl hover:opacity-90 transition-opacity text-sm font-medium"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px',
+              padding: '12px 20px',
+              backgroundColor: '#144A91',
+              color: '#fff',
+              borderRadius: '12px',
+              fontSize: '14px',
+              fontFamily: 'inherit',
+              fontWeight: 500,
+              textDecoration: 'none',
+            }}
           >
             📄 View Resume
           </a>
         </div>
-        <div className="mt-8 flex justify-center">
+        <div style={{ marginTop: '24px', display: 'flex', justifyContent: 'center' }}>
           <Image
-            src="/images/resume.png"
+            src="/images/resumev2.png"
             alt="Resume"
             width={800}
             height={600}
-            className="object-contain w-full max-w-3xl"
+            style={{ objectFit: 'contain', width: '100%', maxWidth: '800px' }}
           />
         </div>
       </section>
