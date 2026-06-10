@@ -19,7 +19,7 @@ MidWhereAh is a smart mobile app that makes meetup planning fair and intuitive. 
 *Note: This project is still ongoing and in development.`}</p>
 
       <div>
-        <h2 style={{ fontSize: '20px', fontWeight: 700, marginBottom: '12px' }}>Key Features</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 600, marginBottom: '12px' }}>Key Features</h2>
         <p style={{ fontSize: '16px', lineHeight: 1.6, whiteSpace: 'pre-line' }}>{`• Group planning with home location, transportation mode and availability input
 • Smart venue suggestions using filtering system, and rating/distance data
 • Swipe voting interface for collaborative decision-making
@@ -27,7 +27,7 @@ MidWhereAh is a smart mobile app that makes meetup planning fair and intuitive. 
       </div>
 
       <div>
-        <h2 style={{ fontSize: '20px', fontWeight: 700, marginBottom: '16px' }}>Prototype Screens</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 600, marginBottom: '16px' }}>Prototype Screens</h2>
         <div style={{ maxWidth: '448px', margin: '0 auto' }}>
           <HorizontalScroller images={images} height={600} aspectRatio="9/19.5" dotNav />
         </div>

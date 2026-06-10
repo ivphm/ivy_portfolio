@@ -14,7 +14,7 @@
 @font-face {
   font-family: 'GlacialIndifference';
   src: url('/fonts/glacial-indifference/GlacialIndifference-Bold.otf') format('opentype');
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -70,7 +70,8 @@
 /* ── Project grid ── */
 .project-grid {
   display: grid;
-  gap: 48px;
+  row-gap: 80px;
+  column-gap: 48px;
   grid-template-columns: repeat(2, 1fr);
   max-width: 1100px;
   margin: 0 auto;
@@ -91,6 +92,7 @@
   width: 560px;
   height: 420px;
   display: block;
+  max-width: none;
 }
 
 /* ── Responsive ── */
@@ -102,8 +104,13 @@
 }
 
 @media (max-width: 900px) {
+  /* Keep florals visible but shrink them */
   .floral-side {
-    display: none;
+    width: 70px !important;
+  }
+
+  .about-image-row {
+    width: 100%;
   }
 }
 
@@ -121,10 +128,18 @@
     gap: 40px;
   }
 
+  .floral-side {
+    width: 60px !important;
+  }
+
   .about-image {
-    width: 100%;
-    height: 300px;
+    width: calc(100vw - 80px - 120px);
+    height: 220px;
     margin-left: 0 !important;
+  }
+
+  .about-content {
+    gap: 20px;
   }
 
   /* About section text */
@@ -139,7 +154,7 @@
   }
 
   .project-card-subtitle {
-    font-size: 15px !important;
+    font-size: 14px !important;
     text-align: left !important;
   }
 
@@ -244,8 +259,13 @@
     padding: 0 12px;
   }
 
+  .floral-side {
+    width: 48px !important;
+  }
+
   .about-image {
-    height: 240px;
+    width: calc(100vw - 64px - 96px);
+    height: 185px;
   }
 
   .project-grid {

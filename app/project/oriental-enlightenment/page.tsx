@@ -13,12 +13,12 @@ export default function OrientalEnlightenmentPage() {
       </p>
 
       <div>
-        <h2 style={{ fontSize: '20px', fontWeight: 700, marginBottom: '16px' }}>Project Demo Video:</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 600, marginBottom: '16px' }}>Project Demo Video:</h2>
         <EmbedFrame src="https://www.youtube.com/embed/S5VPaoTUohI" height={500} title="Oriental Enlightenment Demo" />
       </div>
 
       <div>
-        <h2 style={{ fontSize: '20px', fontWeight: 700, marginBottom: '16px' }}>Supporting Documents:</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 600, marginBottom: '16px' }}>Supporting Documents:</h2>
         <Image src="/images/orientalposter.png" alt="Oriental Poster" width={900} height={500} style={{ width: '100%', objectFit: 'contain', marginBottom: '24px' }} />
         <EmbedFrame src="https://heyzine.com/flip-book/d05c4fc6e9.html" title="Flipbook 1" />
         <div style={{ marginTop: '24px' }}>

@@ -12,7 +12,7 @@ export default function EasternThunderPage() {
         This design project centered around developing visually cohesive and engaging Instagram post templates for Eastern Thunder FC. The content included player highlights, match day countdowns, score updates, and recruitment campaigns. The goal was to maintain brand consistency, increase fan engagement, and visually amplify the club&apos;s identity across digital platforms.
       </p>
 
-      <HorizontalScroller images={images} height={700} aspectRatio="4/3" />
+      <HorizontalScroller images={images} height={600} aspectRatio="1/1" />
     </ProjectPageLayout>
   );
 }

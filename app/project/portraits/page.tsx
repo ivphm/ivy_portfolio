@@ -12,7 +12,7 @@ export default function PortraitsPage() {
       </p>
 
       <div>
-        <h2 style={{ fontSize: '20px', fontWeight: 700, marginBottom: '16px' }}>Interactive Flipbook:</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 600, marginBottom: '16px' }}>Interactive Flipbook:</h2>
         <EmbedFrame src="https://heyzine.com/flip-book/85f18576b8.html#page/1" title="Portraits Flipbook" />
       </div>
     </ProjectPageLayout>

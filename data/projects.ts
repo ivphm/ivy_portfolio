@@ -17,8 +17,8 @@ export interface Project {
 export const projects: Project[] = [
   {
     slug: 'raia',
-    title: 'RAIA: Rapid Adaptive Intelligent Agent',
-    subtitle: 'Autonomous Charging EV Designed for Singapore in 2040',
+    title: 'RAIA',
+    subtitle: 'autonomous charging EV designed for singapore in 2040',
     thumbnail: '/images/project1.png',
     categories: ['Product', 'Graphic', 'Software'],
     meta: [
@@ -30,8 +30,8 @@ export const projects: Project[] = [
   },
   {
     slug: 'luva',
-    title: 'LUVA: AI-Powered Louver Specification Tool',
-    subtitle: 'Intelligent Platform to Streamline Louvers Supply in Construction',
+    title: 'Fameline LUVA',
+    subtitle: 'AI-powered platform to streamline louver consultancy in construction',
     thumbnail: '/images/project13.png',
     categories: ['Graphic', 'Software'],
     meta: [
@@ -44,7 +44,7 @@ export const projects: Project[] = [
   {
     slug: 'midwhere',
     title: 'MidWhereAh',
-    subtitle: 'AI-assisted mobile app to plan fair, accessible, and satisfying meetups',
+    subtitle: 'mobile app to plan fair and satisfying meetups in singapore',
     thumbnail: '/images/project14.png',
     categories: ['Graphic', 'Software'],
     meta: [
@@ -57,7 +57,7 @@ export const projects: Project[] = [
   {
     slug: 'erasmuszorg',
     title: 'ErasmusZorg',
-    subtitle: 'AI & Robotics for Nurses at ErasmusMC',
+    subtitle: 'applied AI & robotics for nurses at ErasmusMC',
     thumbnail: '/images/project_2.png',
     categories: ['Software', 'Product', 'Graphic'],
     meta: [
@@ -70,7 +70,7 @@ export const projects: Project[] = [
   {
     slug: 'ai-data-analytics',
     title: 'AI Data Analytics',
-    subtitle: 'UX Analysis for Gaming Chair Design',
+    subtitle: 'AI-powered data analytics for design project and research',
     thumbnail: '/images/project3.png',
     categories: ['Software'],
     meta: [
@@ -83,7 +83,7 @@ export const projects: Project[] = [
   {
     slug: 'clarion',
     title: 'Clarion',
-    subtitle: 'Designing confidence for softer voices',
+    subtitle: 'designing confidence for softer voices',
     thumbnail: '/images/project_4.png',
     categories: ['Product', 'Graphic'],
     meta: [
@@ -95,8 +95,8 @@ export const projects: Project[] = [
   },
   {
     slug: 'fcsutd',
-    title: 'FCSUTD Graphic Designs',
-    subtitle: 'Branding and Visual Identity for Sports Club',
+    title: 'FCSUTD',
+    subtitle: 'branding and visual identity for uni sports club',
     thumbnail: '/images/project5.png',
     categories: ['Graphic'],
     meta: [
@@ -108,8 +108,8 @@ export const projects: Project[] = [
   },
   {
     slug: 'eastern-thunder',
-    title: 'Eastern Thunder FC Instagram Posts',
-    subtitle: 'Social Media Content and Brand Consistency',
+    title: 'Eastern Thunder FC',
+    subtitle: 'social media content for local football club',
     thumbnail: '/images/project6.png',
     categories: ['Graphic'],
     meta: [
@@ -122,7 +122,7 @@ export const projects: Project[] = [
   {
     slug: 'oriental-enlightenment',
     title: 'Oriental Enlightenment',
-    subtitle: 'Design, IoT, and Context-Aware Smart Systems',
+    subtitle: 'design, IoT, and context-aware smart systems',
     thumbnail: '/images/project7.png',
     categories: ['Product', 'Graphic'],
     meta: [
@@ -134,8 +134,8 @@ export const projects: Project[] = [
   },
   {
     slug: 'eyevpham',
-    title: 'Personal Art Account: @eyevpham',
-    subtitle: 'Digital Art, Illustration & Personal Expression',
+    title: '@eyevpham',
+    subtitle: 'my personal art account on instagram',
     thumbnail: '/images/project8.png',
     categories: ['Illustration'],
     meta: [],
@@ -143,7 +143,7 @@ export const projects: Project[] = [
   {
     slug: 'portraits',
     title: 'Portraits of Youth Activists',
-    subtitle: 'Illustration Series & Social Commentary',
+    subtitle: 'illustration series and social commentary',
     thumbnail: '/images/project9.png',
     categories: ['Illustration'],
     meta: [
@@ -156,7 +156,7 @@ export const projects: Project[] = [
   {
     slug: 'ai-bus-seat',
     title: 'Generative AI Bus Seat',
-    subtitle: 'Optimizing Bus Seat Design for Comfort, Cost, and Sustainability',
+    subtitle: 'optimizing design for comfort, cost, and sustainability',
     thumbnail: '/images/project_10.png',
     categories: ['Software', 'Product'],
     meta: [
@@ -169,20 +169,20 @@ export const projects: Project[] = [
   {
     slug: 'research-illustrations',
     title: 'Research Paper Illustrations',
-    subtitle: 'Creative Communication of Scientific Research Papers',
+    subtitle: 'creative communication of scientific research papers',
     thumbnail: '/images/project11cover.png',
     categories: ['Illustration'],
     meta: [
       { label: 'Company', value: 'Singapore University of Technology and Design (SUTD)' },
       { label: 'Strategies', value: 'Research Illustration, Science Communication, Illustration' },
-      { label: 'Timeline', value: 'May 2025 – Present' },
+      { label: 'Timeline', value: 'May 2025 – Feb 2026' },
       { label: 'Tools Used', value: 'Procreate' },
     ],
   },
   {
     slug: 'ib-art',
     title: 'IB Art Exhibition: Interpreting Childhood',
-    subtitle: 'An Artistic Exploration of Growing Up: Childhood Memories, Identity, and Vietnamese Heritage',
+    subtitle: 'artistic exploration of childhood memories and identity',
     thumbnail: '/images/ex2.png',
     categories: ['Illustration'],
     meta: [

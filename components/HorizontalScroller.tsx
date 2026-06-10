@@ -8,6 +8,7 @@ interface HorizontalScrollerProps {
   height?: number;
   aspectRatio?: string;
   dotNav?: boolean;
+  fit?: 'cover' | 'contain';
 }
 
 export default function HorizontalScroller({
@@ -15,6 +16,7 @@ export default function HorizontalScroller({
   height = 500,
   aspectRatio,
   dotNav = false,
+  fit = 'cover',
 }: HorizontalScrollerProps) {
   const [current, setCurrent] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -45,7 +47,11 @@ export default function HorizontalScroller({
               aspectRatio: aspectRatio ?? undefined,
             }}
           >
-            <img src={src} alt={`slide ${i + 1}`} className="w-full h-full object-cover" />
+            <img
+              src={src}
+              alt={`slide ${i + 1}`}
+              className={`w-full h-full ${fit === 'contain' ? 'object-contain' : 'object-cover'}`}
+            />
           </div>
         ))}
       </div>

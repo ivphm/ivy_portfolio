@@ -14,17 +14,17 @@ export default function IbArtPage() {
       </p>
 
       <div>
-        <h2 style={{ fontSize: '20px', fontWeight: 700, marginBottom: '16px' }}>Selected Artworks Gallery:</h2>
-        <HorizontalScroller images={artImages} height={700} />
+        <h2 style={{ fontSize: '20px', fontWeight: 600, marginBottom: '16px' }}>Selected Artworks Gallery:</h2>
+        <HorizontalScroller images={artImages} height={600} aspectRatio="1/1" />
       </div>
 
       <div>
-        <h2 style={{ fontSize: '20px', fontWeight: 700, marginBottom: '16px' }}>Comparative Analysis Flipbook:</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 600, marginBottom: '16px' }}>Comparative Analysis Flipbook:</h2>
         <EmbedFrame src="https://heyzine.com/flip-book/6bc16db300.html" title="Comparative Analysis" />
       </div>
 
       <div>
-        <h2 style={{ fontSize: '20px', fontWeight: 700, marginBottom: '16px' }}>Visual Process Book Flipbook:</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 600, marginBottom: '16px' }}>Visual Process Book Flipbook:</h2>
         <EmbedFrame src="https://heyzine.com/flip-book/7318e93e43.html" title="Visual Process Book" />
       </div>
     </ProjectPageLayout>

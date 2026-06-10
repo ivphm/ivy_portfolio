@@ -12,7 +12,7 @@ export default function FcsutdPage() {
         This project focused on establishing a clear and modern visual identity for the SUTD Football Club. The scope involved designing the club logo, digital and physical collateral (including jerseys and posters), and ensuring consistency across all platforms. The design combines bold visual elements with strong type to convey both team unity and energy.
       </p>
 
-      <HorizontalScroller images={images} height={700} />
+      <HorizontalScroller images={images} height={600} aspectRatio="1/1" />
     </ProjectPageLayout>
   );
 }

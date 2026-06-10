@@ -16,7 +16,7 @@ export default function MetaGrid({ items }: MetaGridProps) {
     >
       {items.map((item) => (
         <div key={item.label}>
-          <p style={{ fontWeight: 700, marginBottom: '4px' }}>{item.label}:</p>
+          <p style={{ fontWeight: 600, marginBottom: '4px' }}>{item.label}:</p>
           <p style={{ fontSize: '14px', lineHeight: '1.5' }}>{item.value}</p>
         </div>
       ))}

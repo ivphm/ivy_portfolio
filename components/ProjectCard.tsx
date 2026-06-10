@@ -39,9 +39,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             />
           </div>
         </div>
-        <div style={{ marginTop: '20px', textAlign: 'left', padding: '0 4px' }}>
-          <p className="project-card-title" style={{ fontWeight: 700, fontSize: '16px', lineHeight: 1.3, color: '#000' }}>{project.title}</p>
-          <p className="project-card-subtitle" style={{ fontSize: '14px', color: '#000', marginTop: '6px', lineHeight: 1.3 }}>{project.subtitle}</p>
+        <div style={{ marginTop: '20px', textAlign: 'left', padding: '0 4px', width: '100%' }}>
+          <p className="project-card-title" style={{ fontWeight: 600, fontSize: '20px', lineHeight: 1.5, marginTop: '5px',color: '#000' }}>{project.title}</p>
+          <p className="project-card-subtitle" style={{ fontSize: '14px', color: '#000', marginTop: '10px', lineHeight: 1.5 }}>{project.subtitle}</p>
         </div>
       </div>
     </Link>

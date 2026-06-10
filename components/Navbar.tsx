@@ -85,9 +85,10 @@ function NavItem({ label, onClick }: { label: string; onClick?: () => void }) {
         background: 'transparent',
         border: 'none',
         padding: 0,
+        fontWeight: 400,
       }}
     >
-      <span ref={spanRef} style={{ fontSize: '16px', fontWeight: 400, color: '#000', fontFamily: 'inherit' }}>
+      <span ref={spanRef} style={{ fontSize: '16px', fontWeight: 200, color: '#000', fontFamily: 'inherit' }}>
         {label}
       </span>
       <DoodleUnderline visible={hovered} width={width} />
@@ -113,7 +114,7 @@ function MobileNavItem({ label, onClick }: { label: string; onClick?: () => void
       onMouseLeave={() => setHovered(false)}
       className="mobile-menu-item"
     >
-      <span ref={spanRef} style={{ fontFamily: 'inherit' }}>{label}</span>
+      <span ref={spanRef} style={{ fontFamily: 'inherit', fontWeight: 200 }}>{label}</span>
       <DoodleUnderline visible={hovered} width={width} />
     </button>
   );
@@ -150,7 +151,7 @@ export default function Navbar({ onScrollTo, centerLogo }: NavbarProps) {
     >
       {centerLogo && isProject && (
         <button
-          onClick={() => router.back()}
+          onClick={() => router.push('/')}
           style={{
             position: 'absolute',
             left: '32px',
@@ -171,7 +172,7 @@ export default function Navbar({ onScrollTo, centerLogo }: NavbarProps) {
       <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
         {isProject && !centerLogo && (
           <button
-            onClick={() => router.back()}
+            onClick={() => router.push('/')}
             style={{
               background: 'transparent',
               border: 'none',

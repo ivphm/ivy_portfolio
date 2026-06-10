@@ -96,7 +96,7 @@ export default function LandingPage() {
           className="about-content"
         >
           {/* Image with florals in side white space */}
-          <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "center" }}>
+          <div className="about-image-row" style={{ display: "flex", alignItems: "flex-start", justifyContent: "center" }}>
             <div className="floral-side" style={{ display: "flex", justifyContent: "flex-end", paddingTop: "20px" }}>
               <FloralOverlay side="left" inView={aboutInView} />
             </div>
@@ -117,8 +117,8 @@ export default function LandingPage() {
           {/* Text centered below image */}
           <div className="about-text" style={{ fontSize: "16px", lineHeight: "2", textAlign: "center", maxWidth: "720px", display: "flex", flexDirection: "column", gap: "16px" }}>
             <p>Xin chào!</p>
-            <p>I&apos;m Ivy! I&apos;m from Vietnam, studying <span style={{ fontWeight: 700, color: "#144A91" }}>Design and Artificial Intelligence</span> at the Singapore University of Technology and Design, with minors in DTS (Design, Technology and Society) and Computer Science.</p>
-            <p>I&apos;m an aspiring <span style={{ fontWeight: 700, color: "#144A91" }}>UI/UX Engineer</span> fueled by Chagee and a strong belief that good design can change the world (or at least make it a little smarter).</p>
+            <p>I&apos;m Ivy! I&apos;m from Vietnam, studying <span style={{ fontWeight: 600, color: "#144A91" }}>Design and Artificial Intelligence</span> at the Singapore University of Technology and Design, with minors in DTS (Design, Technology and Society) and Computer Science.</p>
+            <p>I&apos;m an aspiring <span style={{ fontWeight: 600, color: "#144A91" }}>UI/UX Engineer</span> fueled by Chagee and a strong belief that good design can change the world (or at least make it a little smarter).</p>
             <p>When I&apos;m not ideating or drowning in code, you can find me sprinting across a football pitch, whacking a pickleball (gracefully), or hunting down the best matcha lattes.</p>
             <p>Have fun exploring my work!</p>
           </div>

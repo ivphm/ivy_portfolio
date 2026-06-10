@@ -58,6 +58,8 @@ export default function FloralOverlay({ side, inView }: FloralOverlayProps) {
         pointerEvents: 'none',
         transform: side === 'left' ? 'scaleX(-1)' : undefined,
         transformOrigin: 'center',
+        width: '100%',
+        height: 'auto',
       }}
     >
       {/* ── Main stem: sweeps from upper-right down to lower-left ── */}

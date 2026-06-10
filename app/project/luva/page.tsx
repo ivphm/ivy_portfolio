@@ -12,7 +12,7 @@ export default function LuvaPage() {
       <LuvaCharacter />
 
       <div>
-        <h2 style={{ fontSize: '20px', fontWeight: 700, marginBottom: '12px' }}>What is LUVA?</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 600, marginBottom: '12px' }}>What is LUVA?</h2>
         <p style={{ fontSize: '16px', lineHeight: 1.6 }}>
           Architects and construction professionals currently spend months conversing and comparing louver products. Fameline APSG is a local supplier of performance louvers, and are seeking for an innovative solution to this inefficiency. LUVA is an intelligent web platform that simplifies the selection and specification of louvers through an AI-powered recommendation engine and an intuitive UI tailored to industry professionals.
         </p>
@@ -47,7 +47,7 @@ export default function LuvaPage() {
               gap: '8px',
               padding: '18px 32px',
               borderRadius: '10px',
-              background: 'rgba(61, 221, 167, 0.88)',
+              background: 'rgb(195, 244, 229)',
               color: '#000',
               fontWeight: 500,
               fontFamily: 'inherit',
@@ -55,7 +55,7 @@ export default function LuvaPage() {
               textDecoration: 'none',
             }}
           >
-            📄 The Story Behind Luva
+            The Story Behind Luva
           </a>
         </div>
       </div>

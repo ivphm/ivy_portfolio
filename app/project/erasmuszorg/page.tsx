@@ -12,7 +12,7 @@ export default function ErasmusZorgPage() {
       </p>
 
       <div>
-        <h2 style={{ fontSize: '20px', fontWeight: 700, marginBottom: '16px' }}>Project Presentation:</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 600, marginBottom: '16px' }}>Project Presentation:</h2>
         <EmbedFrame src="https://simplebooklet.com/appfinalpresentation" title="ErasmusZorg Presentation" />
         <div style={{ marginTop: '12px', textAlign: 'center' }}>
           <a href="https://simplebooklet.com/appfinalpresentation" target="_blank" rel="noopener noreferrer" style={{ color: '#144A91', textDecoration: 'underline', fontSize: '16px' }}>

@@ -12,7 +12,7 @@ export default function AiDataAnalyticsPage() {
       </p>
 
       <div>
-        <h2 style={{ fontSize: '20px', fontWeight: 700, marginBottom: '16px' }}>Project Report:</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 600, marginBottom: '16px' }}>Project Report:</h2>
         <EmbedFrame src="https://drive.google.com/file/d/1oAj3sCltl3ZjaT5Ls9ZXM-DpKvzraGV8/preview" title="AI Data Analytics Report" />
       </div>
     </ProjectPageLayout>

@@ -124,13 +124,14 @@ export default function ProjectGrid() {
       {/* 2-column grid */}
       <div className="project-grid">
         <AnimatePresence mode="popLayout">
-          {filtered.map((project) => (
+          {filtered.map((project, i) => (
             <motion.div
               key={project.slug}
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}
-              transition={{ duration: 0.25, ease: 'easeOut' }}
+              transition={{ duration: 0.6, ease: 'easeOut', delay: (i % 2) * 0.12 }}
+              viewport={{ once: true, amount: 0.15 }}
             >
               <ProjectCard project={project} />
             </motion.div>

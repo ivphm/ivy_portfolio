@@ -22,7 +22,7 @@ export default function AiBusSeatPage() {
       </div>
 
       <div>
-        <h2 style={{ fontSize: '20px', fontWeight: 700, marginBottom: '16px' }}>Project Report:</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 600, marginBottom: '16px' }}>Project Report:</h2>
         <EmbedFrame src="https://drive.google.com/file/d/1KyecKydFMcjDE3NzOe4T0LCA2swDrNa7/preview" title="Bus Seat Report" />
       </div>
     </ProjectPageLayout>
