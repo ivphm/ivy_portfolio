@@ -18,15 +18,16 @@ export default function RaiaPage() {
       </div>
 
       <div style={{ display: 'flex', gap: '24px' }}>
-        <Image src="/images/raia.png" alt="RAIA" width={400} height={300} style={{ borderRadius: '16px', objectFit: 'cover', width: '400px', flexShrink: 0 }} />
-        <p style={{ fontSize: '16px', lineHeight: 1.6 }}>
-          This project was developed over 12 weeks as part of the 60.003 Product Design Studio course at SUTD, under the mentorship of Michael Reeves, Wei Lek, and Hunn Wai. Starting from a basic chassis frame, we designed the EV from the ground up—defining its purpose, concept, visual language, and functionality, culminating in a physical prototype and complete speculative ecosystem.
-          {'\n\n'}Key features{'\n'}
-          • A form inspired by manta rays and modular robotics, blending fluid geometry with functional modularity{'\n'}
-          • A floorless bay system and 2-part locking mechanism for rapid PIP deployment{'\n'}
-          • LiDAR, cameras, and ultrasonic sensors with AI computer vision{'\n'}
-          • SolidState battery for rapid and automated charging
-        </p>
+        <div style={{ fontSize: '16px', lineHeight: 1.6 }}>
+          <p>This project was developed over 12 weeks as part of the 60.003 Product Design Studio course at SUTD, under the mentorship of Michael Reeves, Wei Lek, and Hunn Wai. Starting from a basic chassis frame, we designed the EV from the ground up—defining its purpose, concept, visual language, and functionality, culminating in a physical prototype and complete speculative ecosystem.</p>
+          <p style={{ marginTop: '16px', fontWeight: 600 }}>Key features</p>
+          <ul style={{ marginTop: '8px', paddingLeft: '0', listStyle: 'none' }}>
+            <li>• A form inspired by manta rays and modular robotics, blending fluid geometry with functional modularity</li>
+            <li>• A floorless bay system and 2-part locking mechanism for rapid PIP deployment</li>
+            <li>• LiDAR, cameras, and ultrasonic sensors with AI computer vision</li>
+            <li>• SolidState battery for rapid and automated charging</li>
+          </ul>
+        </div>
       </div>
 
       <div style={{ display: 'flex', gap: '24px' }}>

@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect, useLayoutEffect } from 'react';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
@@ -10,8 +11,67 @@ interface NavbarProps {
   centerLogo?: boolean;
 }
 
+// A smooth wavy underline that traces itself on hover
+function DoodleUnderline({ visible, width }: { visible: boolean; width: number }) {
+  if (width === 0) return null;
+
+  // Sine-wave bezier: each half-wave starts & ends at the midline with a
+  // horizontal tangent, so there are zero sharp points between segments.
+  const h = 7;
+  const mid = h / 2;
+  const amplitude = (h - 2) / 2; // peak distance from midline
+  const waves = Math.max(2, Math.round(width / 16));
+  const halfPeriod = width / waves;
+
+  let d = `M 0,${mid}`;
+  for (let i = 0; i < waves; i++) {
+    const x0 = i * halfPeriod;
+    const x1 = x0 + halfPeriod;
+    const cpX1 = x0 + halfPeriod / 3;
+    const cpX2 = x0 + (2 * halfPeriod) / 3;
+    const peakY = i % 2 === 0 ? mid - amplitude : mid + amplitude;
+    d += ` C ${cpX1},${peakY} ${cpX2},${peakY} ${x1},${mid}`;
+  }
+
+  return (
+    <svg
+      aria-hidden
+      style={{
+        display: 'block',
+        marginTop: '3px',
+        overflow: 'visible',
+        opacity: visible ? 1 : 0,
+        transition: 'opacity 0.1s ease',
+      }}
+      width={width}
+      height={h}
+      viewBox={`0 0 ${width} ${h}`}
+    >
+      <motion.path
+        d={d}
+        fill="none"
+        stroke="#144A91"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        initial={{ pathLength: 0 }}
+        animate={{ pathLength: visible ? 1 : 0 }}
+        transition={{ duration: 0.45, ease: 'easeInOut' }}
+      />
+    </svg>
+  );
+}
+
 function NavItem({ label, onClick }: { label: string; onClick?: () => void }) {
   const [hovered, setHovered] = useState(false);
+  const [width, setWidth] = useState(0);
+  const spanRef = useRef<HTMLSpanElement>(null);
+
+  useLayoutEffect(() => {
+    if (spanRef.current) {
+      setWidth(spanRef.current.offsetWidth);
+    }
+  }, []);
+
   return (
     <button
       onClick={onClick}
@@ -27,19 +87,34 @@ function NavItem({ label, onClick }: { label: string; onClick?: () => void }) {
         padding: 0,
       }}
     >
-      <span style={{ fontSize: '16px', fontWeight: 400, color: '#000', fontFamily: 'inherit' }}>
+      <span ref={spanRef} style={{ fontSize: '16px', fontWeight: 400, color: '#000', fontFamily: 'inherit' }}>
         {label}
       </span>
-      <span
-        style={{
-          display: 'block',
-          height: '2px',
-          background: '#144A91',
-          marginTop: '4px',
-          width: hovered ? '24px' : '0px',
-          transition: 'width 200ms ease',
-        }}
-      />
+      <DoodleUnderline visible={hovered} width={width} />
+    </button>
+  );
+}
+
+function MobileNavItem({ label, onClick }: { label: string; onClick?: () => void }) {
+  const [hovered, setHovered] = useState(false);
+  const [width, setWidth] = useState(0);
+  const spanRef = useRef<HTMLSpanElement>(null);
+
+  useLayoutEffect(() => {
+    if (spanRef.current) {
+      setWidth(spanRef.current.offsetWidth);
+    }
+  }, []);
+
+  return (
+    <button
+      onClick={onClick}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      className="mobile-menu-item"
+    >
+      <span ref={spanRef} style={{ fontFamily: 'inherit' }}>{label}</span>
+      <DoodleUnderline visible={hovered} width={width} />
     </button>
   );
 }
@@ -49,9 +124,17 @@ export default function Navbar({ onScrollTo, centerLogo }: NavbarProps) {
   const router = useRouter();
   const isHome = pathname === '/';
   const isProject = pathname.startsWith('/project/');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const handleMobileNav = (section: string) => {
+    setMobileMenuOpen(false);
+    onScrollTo?.(section);
+  };
 
   return (
+    <>
     <nav
+      className="navbar-pad"
       style={{
         position: 'fixed',
         top: 0,
@@ -62,7 +145,6 @@ export default function Navbar({ onScrollTo, centerLogo }: NavbarProps) {
         display: 'flex',
         alignItems: 'center',
         justifyContent: centerLogo ? 'center' : 'space-between',
-        padding: '0 32px',
         height: '64px',
       }}
     >
@@ -110,14 +192,15 @@ export default function Navbar({ onScrollTo, centerLogo }: NavbarProps) {
             alt="Ivy Pham"
             width={110}
             height={44}
+            className="navbar-logo"
             style={{ cursor: 'pointer', objectFit: 'contain' }}
           />
         </Link>
       </div>
 
-      {/* Right: nav links (hidden on project pages) */}
+      {/* Right: desktop nav links */}
       {!centerLogo && (
-        <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+        <div className="nav-links">
           {isHome && onScrollTo ? (
             <>
               <NavItem label="about" onClick={() => onScrollTo('about')} />
@@ -133,6 +216,48 @@ export default function Navbar({ onScrollTo, centerLogo }: NavbarProps) {
           )}
         </div>
       )}
+
+      {/* Hamburger button — mobile only */}
+      {!centerLogo && (
+        <button
+          className="hamburger-btn"
+          onClick={() => setMobileMenuOpen(o => !o)}
+          aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
+          style={{
+            background: 'transparent',
+            border: 'none',
+            cursor: 'pointer',
+            padding: '8px',
+            flexDirection: 'column',
+            gap: '5px',
+            justifyContent: 'center',
+          }}
+        >
+          <span className={`ham-line ${mobileMenuOpen ? 'ham-open-1' : ''}`} />
+          <span className={`ham-line ${mobileMenuOpen ? 'ham-open-2' : ''}`} />
+          <span className={`ham-line ${mobileMenuOpen ? 'ham-open-3' : ''}`} />
+        </button>
+      )}
     </nav>
+
+    {/* Mobile dropdown menu */}
+    {!centerLogo && mobileMenuOpen && (
+      <div className="mobile-menu">
+        {isHome && onScrollTo ? (
+          <>
+            <MobileNavItem label="about" onClick={() => handleMobileNav('about')} />
+            <MobileNavItem label="projects" onClick={() => handleMobileNav('projects')} />
+            <MobileNavItem label="experience" onClick={() => handleMobileNav('experience')} />
+          </>
+        ) : (
+          <>
+            <Link href="/#about" onClick={() => setMobileMenuOpen(false)}><MobileNavItem label="about" /></Link>
+            <Link href="/#projects" onClick={() => setMobileMenuOpen(false)}><MobileNavItem label="projects" /></Link>
+            <Link href="/#experience" onClick={() => setMobileMenuOpen(false)}><MobileNavItem label="experience" /></Link>
+          </>
+        )}
+      </div>
+    )}
+    </>
   );
 }
