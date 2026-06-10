@@ -1,6 +1,6 @@
 import ProjectPageLayout from '@/components/ProjectPageLayout';
 import HorizontalScroller from '@/components/HorizontalScroller';
-import Image from 'next/image';
+import Image from '@/components/AppImage';
 import { projects } from '@/data/projects';
 
 const p = projects.find((x) => x.slug === 'research-illustrations')!;

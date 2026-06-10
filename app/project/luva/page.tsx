@@ -1,7 +1,7 @@
 import ProjectPageLayout from '@/components/ProjectPageLayout';
 import EmbedFrame from '@/components/EmbedFrame';
 import LuvaCharacter from '@/components/LuvaCharacter';
-import Image from 'next/image';
+import Image from '@/components/AppImage';
 import { projects } from '@/data/projects';
 
 const p = projects.find((x) => x.slug === 'luva')!;

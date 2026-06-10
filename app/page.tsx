@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import { useInView } from "framer-motion";
-import Image from "next/image";
+import Image from '@/components/AppImage';
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import ImageHeader from "@/components/ImageHeader";

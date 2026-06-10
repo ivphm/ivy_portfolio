@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
+import Image from '@/components/AppImage';
 import { FaInstagram, FaGithub, FaLinkedin, FaGoogle } from 'react-icons/fa';
 
 const socials = [

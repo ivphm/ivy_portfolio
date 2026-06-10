@@ -1,7 +1,7 @@
 'use client';
 
 import { useRef, useState } from 'react';
-import Image from 'next/image';
+import Image from '@/components/AppImage';
 
 interface HorizontalScrollerProps {
   images: string[];
@@ -42,15 +42,18 @@ export default function HorizontalScroller({
             key={i}
             className="flex-shrink-0 snap-center rounded-2xl overflow-hidden"
             style={{
+              position: 'relative',
               width: aspectRatio ? undefined : '85%',
               height: `${height}px`,
               aspectRatio: aspectRatio ?? undefined,
             }}
           >
-            <img
+            <Image
               src={src}
               alt={`slide ${i + 1}`}
-              className={`w-full h-full ${fit === 'contain' ? 'object-contain' : 'object-cover'}`}
+              fill
+              className={fit === 'contain' ? 'object-contain' : 'object-cover'}
+              sizes="(max-width: 768px) 90vw, 800px"
             />
           </div>
         ))}

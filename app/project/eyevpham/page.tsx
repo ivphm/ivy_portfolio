@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from '@/components/AppImage';
 import ProjectPageLayout from '@/components/ProjectPageLayout';
 import { motion } from 'framer-motion';
 import { projects } from '@/data/projects';
@@ -94,7 +95,7 @@ export default function EyevphamPage() {
               boxShadow: hovered ? '0 20px 40px rgba(78,78,80,0.3)' : 'none',
             }}
           >
-            <img src="/images/eyevpham.png" alt="@eyevpham" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <Image src="/images/eyevpham.png" alt="@eyevpham" fill style={{ objectFit: 'cover' }} />
             <div
               style={{
                 position: 'absolute',

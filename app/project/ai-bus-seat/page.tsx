@@ -1,6 +1,6 @@
 import ProjectPageLayout from '@/components/ProjectPageLayout';
 import EmbedFrame from '@/components/EmbedFrame';
-import Image from 'next/image';
+import Image from '@/components/AppImage';
 import { projects } from '@/data/projects';
 
 const p = projects.find((x) => x.slug === 'ai-bus-seat')!;
