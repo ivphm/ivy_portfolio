@@ -13,18 +13,18 @@ export default function ErasmusZorgPage() {
 
       <div>
         <h2 style={{ fontSize: '20px', fontWeight: 600, marginBottom: '16px' }}>Project Presentation:</h2>
-        <EmbedFrame src="https://simplebooklet.com/appfinalpresentation" title="ErasmusZorg Presentation" />
+        <EmbedFrame src="https://heyzine.com/flip-book/5d0989de8f.html" title="ErasmusZorg Presentation" />
         <div style={{ marginTop: '12px', textAlign: 'center' }}>
-          <a href="https://simplebooklet.com/appfinalpresentation" target="_blank" rel="noopener noreferrer" style={{ color: '#144A91', textDecoration: 'underline', fontSize: '16px' }}>
+          <a href="https://heyzine.com/flip-book/5d0989de8f.html" target="_blank" rel="noopener noreferrer" style={{ color: '#144A91', textDecoration: 'underline', fontSize: '16px' }}>
             Open presentation in new tab
           </a>
         </div>
       </div>
 
       <div>
-        <EmbedFrame src="https://simplebooklet.com/appgroup7report" title="ErasmusZorg Report" />
+        <EmbedFrame src="https://heyzine.com/flip-book/b5bd863afd.html" title="ErasmusZorg Report" />
         <div style={{ marginTop: '12px', textAlign: 'center' }}>
-          <a href="https://simplebooklet.com/appgroup7report" target="_blank" rel="noopener noreferrer" style={{ color: '#144A91', textDecoration: 'underline', fontSize: '16px' }}>
+          <a href="https://heyzine.com/flip-book/b5bd863afd.html" target="_blank" rel="noopener noreferrer" style={{ color: '#144A91', textDecoration: 'underline', fontSize: '16px' }}>
             Open report in new tab
           </a>
         </div>
